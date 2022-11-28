@@ -2557,7 +2557,7 @@ class Map extends Camera {
             }
         }, {once: true});
 
-        const gl = this._canvas.getContext('webgl', attributes) ||
+        const gl = this._canvas.getContext('webgl2', attributes) ||
             this._canvas.getContext('experimental-webgl', attributes);
 
         if (!gl) {
